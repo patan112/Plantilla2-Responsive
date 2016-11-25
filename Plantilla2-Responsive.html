@@ -18,7 +18,7 @@
 			}
 			#main{
 				float: right;
-				padding-right: 10%;
+				padding-right: 20%;
 				width: 45%;
 				overflow: hidden;
 				margin: 2%;
@@ -28,8 +28,8 @@
 				list-style-type: none;
 				position: relative;
 				padding: 5px;
-
 			}
+
 			#sidebar .inner #menu ul span{
 				text-decoration: none;
 				text-align: left;
@@ -38,6 +38,7 @@
 			}
 			#sidebar .inner #menu ul li ul {
 				display: none;
+				border:none;
 			}
 			#sidebar .inner #menu ul li ul a {
 				color: red;
@@ -50,6 +51,7 @@
 				padding-right: 10px;
 				border-bottom: 1px solid grey;
 				padding-bottom: 10%;
+				margin: 20PX;
 			}
 			#sidebar .inner #menu ul li a{
 				text-decoration: none;
@@ -59,6 +61,133 @@
 			#sidebar .inner #menu ul li:hover ul {
 				display: block;
 			}
+			section .major h2{
+				border-bottom: 4px solid red;
+				width: 200px;
+				margin-left: 20px;
+			}
+			#sidebar .inner #menu .major h2{
+				border-bottom: 4px solid red;
+				width: 180px;
+				margin-left: 20px;
+			}
+			section .mini-posts article img {
+				width: 95%;
+				margin: auto;
+				border-radius: 15px;
+			}
+			section .mini-posts article{
+				padding: 10px;
+			}
+			section .mini-posts article p{
+				width: 90%;
+				margin: auto;
+				border-bottom: 1px solid grey;
+				padding: 10px;
+				padding-left: 0;
+			}
+			section  ul.actions a{
+				text-decoration: none;
+				color:red;
+				padding: 10px;
+				border:1px solid red;
+				border-radius: 5px;
+			}
+			section  ul.actions{
+				list-style-type: none;
+				padding-left: 8px;
+				margin-left: 8px;
+			}
+			section p{
+				margin: auto;
+				width: 90%;
+				padding: 10px;
+			}
+			
+			section ul.contact a{
+				text-decoration: none;
+				color: black;
+				border-bottom: 1px dashed grey;
+			}
+			section ul.contact li{
+				padding: 15px;
+				border-bottom: 1px solid grey;
+				margin-right: 20px;
+			}
+			#footer a{
+				text-decoration: none;
+				border-bottom: 1px dashed grey;
+				color:black;
+			}
+			#footer{
+				padding: 10px;
+			}
+
+
+
+
+			#main .inner header a {
+				text-decoration: none;
+				color:black;
+			}
+
+			#main .inner header ul li{
+				display: inline-block;
+				float: right;
+				padding: 6px;
+				position: relative;
+				bottom: 40px;
+				
+			}
+			#main .inner{
+				width: 750px;
+			}
+			#main .inner #header{
+				border-bottom: 5px solid red;
+			}
+			#wrapper header.major h2{
+				padding-bottom: 14px;
+			}
+
+			section#banner .content {
+				float: left;
+				width: 325px;
+			}
+			section#banner span{
+				float: left;
+				width: 325px;
+			}
+			section#banner img{
+				width: 420px;
+				height: 570px;
+				border-radius: 5px;
+			}
+
+			section#banner .content header h1{
+				font-size: 65px;
+			}
+			section#banner .content header p{
+				text-transform: uppercase;
+				position: relative;
+				bottom: 40px;
+				right: 16px;
+			}
+			section#banner .content p{
+				position: relative;
+				bottom: 40px;
+				right: 16px;
+			}
+
+			section#banner .content ul.actions{
+				padding-left: 0px;
+				margin-left: 0px;
+			}
+			section#banner .content ul.actions li a{
+				padding-right:40px;
+				padding-left: 40px;
+				text-transform: uppercase;
+			}
+			/*Aqui falta ERAT LACINIA Y LA PUERTA */
 
 
 
@@ -67,7 +196,40 @@
 
 
 
+			section .posts article{
+				float: left;
+				width: 300px;
+				
+			}
+			section .posts article a img{
+				width: 280px;
+				border-radius: 5px;
+			}
+			section .posts article p{
+				margin-left: 0px;
+				padding-left: 0px;
+			}
+			section .posts article ul{
+				margin-left: 0px;
+				padding-left: 0px;
+			}
 
+			section .posts article .actions li a {
+				padding-left:22px;
+				padding-right: 22px;
+			}
+			section .posts article:nth-child(1){
+				border-right: 1px solid grey;
+				padding-right: 65px;
+			}
+			section .posts article:nth-child(2){
+				padding-left: 30px;
+				margin-left: 50px;
+			}
+			section header.major h2 {
+				padding-left: 0px;
+				margin-left: 0px;
+			}
 
 
 		</style>
@@ -86,11 +248,11 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Editorial</strong> by RRS</a>
 									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+										<li><a href="#" class="icon fa-twitter"><span class="label"></span><img src="images/delicious.png"></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label"></span><img src="images/facebook.png"></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label"></span><img src="images/feed.png"></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label"></span><img src="images/flickr.png"></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label"></span><img src="images/twitter.png"></a></li>
 									</ul>
 								</header>
 
