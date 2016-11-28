@@ -30,7 +30,6 @@
 				position: relative;
 				padding: 5px;
 			}
-
 			#sidebar .inner #menu ul span{
 				text-decoration: none;
 				text-align: left;
@@ -61,6 +60,7 @@
 			}
 			#sidebar .inner #menu ul li:hover ul {
 				display: block;
+				cursor: wait;
 			}
 			section .major h2{
 				border-bottom: 4px solid red;
@@ -129,15 +129,10 @@
 			#footer{
 				padding: 10px;
 			}
-
-
-
-
 			#main .inner header a {
 				text-decoration: none;
 				color:black;
 			}
-
 			#main .inner header ul li{
 				display: inline-block;
 				float: right;
@@ -155,7 +150,6 @@
 			#wrapper header.major h2{
 				padding-bottom: 14px;
 			}
-
 			section#banner .content {
 				float: left;
 				width: 325px;
@@ -165,11 +159,10 @@
 				width: 325px;
 			}
 			section#banner img{
-				width: 420px;
-				height: 570px;
+				/*width: 420px;
+				height: 570px;*/
 				border-radius: 5px;
 			}
-
 			section#banner .content header h1{
 				font-size: 65px;
 			}
@@ -184,7 +177,6 @@
 				bottom: 40px;
 				right: 16px;
 			}
-
 			section#banner .content ul.actions{
 				padding-left: 0px;
 				margin-left: 0px;
@@ -206,20 +198,10 @@
 				margin-left: 0px;
 				width:280px;
 			}
-			section .features{
-				overflow: hidden;
-			}
 			section .features article span{
 				position: relative;
 				top:80px;
 			}
-
-
-
-
-
-
-
 			section .posts article{
 				float: left;
 				width: 300px;
@@ -237,7 +219,6 @@
 				margin-left: 0px;
 				padding-left: 0px;
 			}
-
 			section .posts article .actions li a {
 				padding-left:22px;
 				padding-right: 22px;
@@ -254,7 +235,6 @@
 				padding-left: 0px;
 				margin-left: 0px;
 			}
-
 			span i{
 				color:red;
 				border:1px solid grey;
@@ -276,15 +256,73 @@
 				border-radius: 5px;
 				width: 90%;
 			}
+			#sidebar .inner section#search  i:hover{color: red;}
+			#sidebar .inner section#search  i:active{cursor: wait;}
 			nav#menu ul span i{
 				border:none;
 				float: right;
 			}
+			#wrapper #main .inner #header .icons li i:hover{color: red;}
+			#sidebar .inner nav#menu ul li ul li:hover{background-color: black;}
 
 
 
 
+			@media screen and (max-width:1177px){
+				#sidebar{
+					display: none;
+				}
+				#main{
+					float: none;
+					width: 48%;
+					margin: auto;
+				}
+				section#banner {
+					float: none;
+					display: flex;
+					flex-direction: column-reverse;
 
+				}
+				section#banner  img{
+					width: 750px;
+					height: 200px;
+					margin-top: 25px;
+
+				}
+				section#banner span{
+					float: none;
+
+				}
+				section#banner .content{
+					text-align:left;
+					width: 800px;
+					float: none;
+
+				}
+				section#banner .content header p{
+					margin-left: 0px;
+					padding-left: 0px;
+
+				}
+				section#banner .content p{
+					margin-left: 0px;
+					padding-left: 0px;
+				}
+				section .features article .content {
+					float: none;
+					width: 600px;
+					overflow: none;
+					margin-left: 100px;
+				}
+				section .features article{
+					float: none;
+					width: 100%;
+				}
+				section .features article .content p{
+					margin-left: 0px;
+					padding-left: 0px;
+				}
+			}
 
 		</style>
 		
@@ -324,7 +362,7 @@
 										</ul>
 									</div>
 									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
+										<img src="images/pic10.jpg"  alt="" width="420px" height="570px" />
 									</span>
 								</section>
 
