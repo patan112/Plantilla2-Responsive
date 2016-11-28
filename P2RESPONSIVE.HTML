@@ -5,6 +5,7 @@
 		<title></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 		<style type="text/css">
 			#wrapper{
 				width: 100%;
@@ -37,6 +38,7 @@
 			}
 			#sidebar .inner #menu ul li ul {
 				display: none;
+				border:none;
 			}
 			#sidebar .inner #menu ul li ul a {
 				color: red;
@@ -58,7 +60,215 @@
 			}
 			#sidebar .inner #menu ul li:hover ul {
 				display: block;
+				cursor: wait;
+
 			}
+			section .major h2{
+				border-bottom: 4px solid red;
+				width: 200px;
+				margin-left: 20px;
+			}
+			#sidebar .inner #menu .major h2{
+				border-bottom: 4px solid red;
+				width: 180px;
+				margin-left: 20px;
+			}
+			section .mini-posts article img {
+				width: 95%;
+				margin: auto;
+				border-radius: 15px;
+			}
+			section .mini-posts article{
+				padding: 10px;
+			}
+			section .mini-posts article p{
+				width: 90%;
+				margin: auto;
+				border-bottom: 1px solid grey;
+				padding: 10px;
+				padding-left: 0;
+			}
+			section  ul.actions a{
+				text-decoration: none;
+				color:red;
+				padding: 10px;
+				border:1px solid red;
+				border-radius: 5px;
+			}
+			section  ul.actions{
+				list-style-type: none;
+				padding-left: 8px;
+				margin-left: 8px;
+			}
+			section p{
+				margin: auto;
+				width: 90%;
+				padding: 10px;
+			}
+			
+			section ul.contact a{
+				text-decoration: none;
+				color: black;
+				border-bottom: 1px dashed grey;
+			}
+			section ul.contact li{
+				padding: 15px;
+				border-bottom: 1px solid grey;
+				margin-right: 20px;
+				list-style-type: none;
+			}
+			section ul.contact li i{
+				color: red;
+				position: relative;
+				right: 20px;
+			}
+			#footer a{
+				text-decoration: none;
+				border-bottom: 1px dashed grey;
+				color:black;
+			}
+			#footer{
+				padding: 10px;
+			}
+			#main .inner header a {
+				text-decoration: none;
+				color:black;
+			}
+			#main .inner header ul li{
+				display: inline-block;
+				float: right;
+				padding: 6px;
+				position: relative;
+				bottom: 40px;
+				
+			}
+			#main .inner{
+				width: 750px;
+			}
+			#main .inner #header{
+				border-bottom: 5px solid red;
+			}
+			#wrapper header.major h2{
+				padding-bottom: 14px;
+			}
+			section#banner .content {
+				float: left;
+				width: 325px;
+			}
+			section#banner span{
+				float: left;
+				width: 325px;
+			}
+			section#banner img{
+				width: 420px;
+				height: 570px;
+				border-radius: 5px;
+			}
+			section#banner .content header h1{
+				font-size: 65px;
+			}
+			section#banner .content header p{
+				text-transform: uppercase;
+				position: relative;
+				bottom: 40px;
+				right: 16px;
+			}
+			section#banner .content p{
+				position: relative;
+				bottom: 40px;
+				right: 16px;
+			}
+			section#banner .content ul.actions{
+				padding-left: 0px;
+				margin-left: 0px;
+			}
+			section#banner .content ul.actions li a{
+				padding-right:40px;
+				padding-left: 40px;
+				text-transform: uppercase;
+			}
+			/*Aqui falta ERAT LACINIA Y LA PUERTA */
+			section .features article{
+				float: left;
+				width: 350px;
+				margin: 10px;
+			}
+			section .features article .content{
+				float: right;
+				padding-left: 0px;
+				margin-left: 0px;
+				width:280px;
+			}
+			section .features{
+				overflow: hidden;
+			}
+			section .features article span{
+				position: relative;
+				top:80px;
+			}
+			section .posts article{
+				float: left;
+				width: 300px;
+				
+			}
+			section .posts article a img{
+				width: 280px;
+				border-radius: 5px;
+			}
+			section .posts article p{
+				margin-left: 0px;
+				padding-left: 0px;
+			}
+			section .posts article ul{
+				margin-left: 0px;
+				padding-left: 0px;
+			}
+			section .posts article .actions li a {
+				padding-left:22px;
+				padding-right: 22px;
+			}
+			section .posts article:nth-child(1){
+				border-right: 1px solid grey;
+				padding-right: 65px;
+			}
+			section .posts article:nth-child(2){
+				padding-left: 30px;
+				margin-left: 50px;
+			}
+			section header.major h2 {
+				padding-left: 0px;
+				margin-left: 0px;
+			}
+			span i{
+				color:red;
+				border:1px solid grey;
+				padding:5px;
+			}
+			#sidebar .inner section#search i{
+				position:relative;
+				bottom: 25px;
+				left: 250px;
+				opacity: 0.5;
+			}
+			#sidebar .inner section#search{
+				margin: 0 auto;
+				width: 90%;
+				margin-top: 20px;
+			}
+			#sidebar .inner section#search input{
+				padding: 7px;
+				border-radius: 5px;
+				width: 90%;
+			}
+			#sidebar .inner section#search  i:hover{color: red;}
+			#sidebar .inner section#search  i:active{cursor: wait;}
+			nav#menu ul span i{
+				border:none;
+				float: right;
+			}
+
+			#wrapper #main .inner #header .icons li i:hover{color: red;}
+			#sidebar .inner nav#menu ul li ul li:hover{background-color: black;}
 		</style>
 		
 	</head>
@@ -75,11 +285,11 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Editorial</strong> by RRS</a>
 									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><span class="label"></span><img src=""></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span class="label"></span></a></li>
+										<li><a href="#"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i><span class="label"></span></a></li>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span class="label"></span><img src=""></a></li>
+										<li><a href="#"><i class="fa fa-medium" aria-hidden="true"></i><span class="label"></span><img src=""></a></li>
 									</ul>
 								</header>
 
@@ -108,28 +318,28 @@
 									</header>
 									<div class="features">
 										<article>
-											<span class="icon fa-diamond"></span>
+											<span> <i class="fa fa-diamond fa-3x fa-spin" aria-hidden="true"></i> </span>
 											<div class="content">
 												<h3>Portitor ullamcorper</h3>
 												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon fa-paper-plane"></span>
+											<span> <i class="fa fa-paper-plane fa-3x fa-spin" aria-hidden="true"></i></span>
 											<div class="content">
 												<h3>Sapien veroeros</h3>
 												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon fa-rocket"></span>
+											<span><i class="fa fa-rocket fa-3x fa-spin" aria-hidden="true"></i></span>
 											<div class="content">
 												<h3>Quam lorem ipsum</h3>
 												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon fa-signal"></span>
+											<span><i class="fa fa-signal fa-3x fa-spin" aria-hidden="true" ></i></span>
 											<div class="content">
 												<h3>Sed magna finibus</h3>
 												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
@@ -174,7 +384,7 @@
 							<!-- Search -->
 								<section id="search" class="alt">
 									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
+										<input type="text" name="query" id="query" placeholder="Search" > <i class="fa fa-search" aria-hidden="true"></i>
 									</form>
 								</section>
 
@@ -188,7 +398,7 @@
 										<li><a href="generic.html">Generic</a></li>
 										<li><a href="elements.html">Elements</a></li>
 										<li>
-											<span class="opener">Submenu</span>
+											<span>Submenu<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 											<ul>
 												<li><a href="#">Lorem Dolor</a></li>
 												<li><a href="#">Ipsum Adipiscing</a></li>
@@ -199,7 +409,7 @@
 										<li><a href="#">Etiam Dolore</a></li>
 										<li><a href="#">Adipiscing</a></li>
 										<li>
-											<span class="opener">Another Submenu</span>
+											<span>Another Submenu<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 											<ul>
 												<li><a href="#">Lorem Dolor</a></li>
 												<li><a href="#">Ipsum Adipiscing</a></li>
@@ -244,9 +454,9 @@
 									</header>
 									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 									<ul class="contact">
-										<li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
-										<li class="fa-phone">(000) 000-0000</li>
-										<li class="fa-home">1234 Somewhere Road #8254<br />
+										<li> <i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">information@untitled.tld</a></li>
+										<li><i class="fa fa-phone" aria-hidden="true"></i>(000) 000-0000</li>
+										<li><i class="fa fa-home" aria-hidden="true"></i>1234 Somewhere Road #8254<br />
 										Nashville, TN 00000-0000</li>
 									</ul>
 								</section>
