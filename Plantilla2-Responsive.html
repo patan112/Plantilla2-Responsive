@@ -5,6 +5,7 @@
 		<title></title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
 		<style type="text/css">
 			#wrapper{
 				width: 100%;
@@ -113,6 +114,12 @@
 				padding: 15px;
 				border-bottom: 1px solid grey;
 				margin-right: 20px;
+				list-style-type: none;
+			}
+			section ul.contact li i{
+				color: red;
+				position: relative;
+				right: 20px;
 			}
 			#footer a{
 				text-decoration: none;
@@ -188,7 +195,24 @@
 				text-transform: uppercase;
 			}
 			/*Aqui falta ERAT LACINIA Y LA PUERTA */
-
+			section .features article{
+				float: left;
+				width: 350px;
+				margin: 10px;
+			}
+			section .features article .content{
+				float: right;
+				padding-left: 0px;
+				margin-left: 0px;
+				width:280px;
+			}
+			section .features{
+				overflow: hidden;
+			}
+			section .features article span{
+				position: relative;
+				top:80px;
+			}
 
 
 
@@ -231,6 +255,36 @@
 				margin-left: 0px;
 			}
 
+			span i{
+				color:red;
+				border:1px solid grey;
+				padding:5px;
+			}
+			#sidebar .inner section#search i{
+				position:relative;
+				bottom: 25px;
+				left: 250px;
+				opacity: 0.5;
+			}
+			#sidebar .inner section#search{
+				margin: 0 auto;
+				width: 90%;
+				margin-top: 20px;
+			}
+			#sidebar .inner section#search input{
+				padding: 7px;
+				border-radius: 5px;
+				width: 90%;
+			}
+			nav#menu ul span i{
+				border:none;
+				float: right;
+			}
+
+
+
+
+
 
 		</style>
 		
@@ -248,11 +302,11 @@
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Editorial</strong> by RRS</a>
 									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label"></span><img src="images/delicious.png"></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label"></span><img src="images/facebook.png"></a></li>
-										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label"></span><img src="images/feed.png"></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label"></span><img src="images/flickr.png"></a></li>
-										<li><a href="#" class="icon fa-medium"><span class="label"></span><img src="images/twitter.png"></a></li>
+										<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><span class="label"></span><img src=""></a></li>
+										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i><span class="label"></span></a></li>
+										<li><a href="#"><i class="fa fa-snapchat-ghost" aria-hidden="true"></i><span class="label"></span></a></li>
+										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span class="label"></span><img src=""></a></li>
+										<li><a href="#"><i class="fa fa-medium" aria-hidden="true"></i><span class="label"></span><img src=""></a></li>
 									</ul>
 								</header>
 
@@ -281,28 +335,28 @@
 									</header>
 									<div class="features">
 										<article>
-											<span class="icon fa-diamond"></span>
+											<span> <i class="fa fa-diamond fa-3x fa-spin" aria-hidden="true"></i> </span>
 											<div class="content">
 												<h3>Portitor ullamcorper</h3>
 												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon fa-paper-plane"></span>
+											<span> <i class="fa fa-paper-plane fa-3x fa-spin" aria-hidden="true"></i></span>
 											<div class="content">
 												<h3>Sapien veroeros</h3>
 												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon fa-rocket"></span>
+											<span><i class="fa fa-rocket fa-3x fa-spin" aria-hidden="true"></i></span>
 											<div class="content">
 												<h3>Quam lorem ipsum</h3>
 												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 											</div>
 										</article>
 										<article>
-											<span class="icon fa-signal"></span>
+											<span><i class="fa fa-signal fa-3x fa-spin" aria-hidden="true" ></i></span>
 											<div class="content">
 												<h3>Sed magna finibus</h3>
 												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
@@ -347,7 +401,7 @@
 							<!-- Search -->
 								<section id="search" class="alt">
 									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
+										<input type="text" name="query" id="query" placeholder="Search" > <i class="fa fa-search" aria-hidden="true"></i>
 									</form>
 								</section>
 
@@ -361,7 +415,7 @@
 										<li><a href="generic.html">Generic</a></li>
 										<li><a href="elements.html">Elements</a></li>
 										<li>
-											<span class="opener">Submenu</span>
+											<span>Submenu<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 											<ul>
 												<li><a href="#">Lorem Dolor</a></li>
 												<li><a href="#">Ipsum Adipiscing</a></li>
@@ -372,7 +426,7 @@
 										<li><a href="#">Etiam Dolore</a></li>
 										<li><a href="#">Adipiscing</a></li>
 										<li>
-											<span class="opener">Another Submenu</span>
+											<span>Another Submenu<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 											<ul>
 												<li><a href="#">Lorem Dolor</a></li>
 												<li><a href="#">Ipsum Adipiscing</a></li>
@@ -417,9 +471,9 @@
 									</header>
 									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
 									<ul class="contact">
-										<li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
-										<li class="fa-phone">(000) 000-0000</li>
-										<li class="fa-home">1234 Somewhere Road #8254<br />
+										<li> <i class="fa fa-envelope-o" aria-hidden="true"></i><a href="#">information@untitled.tld</a></li>
+										<li><i class="fa fa-phone" aria-hidden="true"></i>(000) 000-0000</li>
+										<li><i class="fa fa-home" aria-hidden="true"></i>1234 Somewhere Road #8254<br />
 										Nashville, TN 00000-0000</li>
 									</ul>
 								</section>
