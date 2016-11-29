@@ -30,6 +30,14 @@
 				position: relative;
 				padding: 5px;
 			}
+				
+			#sidebar span.nuevo1 {
+				float: right;
+				background-color: black;}
+				
+			
+			}
+		 	
 			#sidebar .inner #menu ul span{
 				text-decoration: none;
 				text-align: left;
@@ -61,7 +69,6 @@
 			#sidebar .inner #menu ul li:hover ul {
 				display: block;
 				cursor: wait;
-
 			}
 			section .major h2{
 				border-bottom: 4px solid red;
@@ -73,6 +80,7 @@
 				width: 180px;
 				margin-left: 20px;
 			}
+
 			section .mini-posts article img {
 				width: 95%;
 				margin: auto;
@@ -160,8 +168,8 @@
 				width: 325px;
 			}
 			section#banner img{
-				width: 420px;
-				height: 570px;
+				/*width: 420px;
+				height: 570px;*/
 				border-radius: 5px;
 			}
 			section#banner .content header h1{
@@ -198,9 +206,6 @@
 				padding-left: 0px;
 				margin-left: 0px;
 				width:280px;
-			}
-			section .features{
-				overflow: hidden;
 			}
 			section .features article span{
 				position: relative;
@@ -255,6 +260,7 @@
 				width: 90%;
 				margin-top: 20px;
 			}
+			
 			#sidebar .inner section#search input{
 				padding: 7px;
 				border-radius: 5px;
@@ -266,9 +272,60 @@
 				border:none;
 				float: right;
 			}
-
 			#wrapper #main .inner #header .icons li i:hover{color: red;}
 			#sidebar .inner nav#menu ul li ul li:hover{background-color: black;}
+			@media screen and (max-width:1177px){
+				#sidebar {
+			display: none;
+
+				}
+				div.nuevo span.nuevo{display: none;}
+				#main{
+					float: none;
+					width: 48%;
+					margin: auto;
+				}
+				section#banner {
+					float: none;
+					display: flex;
+					flex-direction: column-reverse;
+				}
+				section#banner  img{
+					width: 750px;
+					height: 200px;
+					margin-top: 25px;
+				}
+				section#banner span{
+					float: none;
+				}
+				section#banner .content{
+					text-align:left;
+					width: 800px;
+					float: none;
+				}
+				section#banner .content header p{
+					margin-left: 0px;
+					padding-left: 0px;
+				}
+				section#banner .content p{
+					margin-left: 0px;
+					padding-left: 0px;
+				}
+				section .features article .content {
+					float: none;
+					width: 600px;
+					overflow: none;
+					margin-left: 100px;
+				}
+				section .features article{
+					float: none;
+					width: 100%;
+				}
+				section .features article .content p{
+					margin-left: 0px;
+					padding-left: 0px;
+				}
+			}
 		</style>
 		
 	</head>
@@ -307,7 +364,7 @@
 										</ul>
 									</div>
 									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
+										<img src="images/pic10.jpg"  alt="" width="420px" height="570px" />
 									</span>
 								</section>
 
@@ -378,7 +435,9 @@
 					</div>
 
 				<!-- Sidebar -->
-					<div id="sidebar">
+				
+				
+				<div id="sidebar"><span class="nuevo1"><i class="fa fa-bars" aria-hidden="true"></i></span>
 						<div class="inner">
 
 							<!-- Search -->
@@ -398,7 +457,7 @@
 										<li><a href="generic.html">Generic</a></li>
 										<li><a href="elements.html">Elements</a></li>
 										<li>
-											<span>Submenu<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+											<span class="mayus">Submenu<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 											<ul>
 												<li><a href="#">Lorem Dolor</a></li>
 												<li><a href="#">Ipsum Adipiscing</a></li>
@@ -409,7 +468,7 @@
 										<li><a href="#">Etiam Dolore</a></li>
 										<li><a href="#">Adipiscing</a></li>
 										<li>
-											<span>Another Submenu<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+											<span class="mayus">Another Submenu<i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 											<ul>
 												<li><a href="#">Lorem Dolor</a></li>
 												<li><a href="#">Ipsum Adipiscing</a></li>
